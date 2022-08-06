@@ -1,0 +1,76 @@
+from re import L
+from turtle import left, right
+
+
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.") 
+
+#https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
+
+#Write your code below this line 👇
+
+turn = input("you have come to a cross road, would you like to turn? left or right?\n")
+
+if turn == ("left"):
+  print(" you have missed the hostiles waiting to ambush well done! ")
+  maths = int(input(" you have ditched the hostiles and now face a math problem! you need to pass this question to pass through the door! what is 10 + 5? "))
+  if maths == (15):
+    print(" well done the door swings open slowly! ")
+    
+    straight_ahead = input(" you have now come to another crossroads! you can either go left, right or straight! which will you choose?\n")
+    if straight_ahead == ("straight"):
+      print(" well done you have chosen wisely")  
+
+      cross = input("you approach a unstable bridge ahead. do you cross it? yes or no \n")
+
+      if cross == ("yes"):
+        print(" you have made it across safely and found the treasure")
+
+
+      
+
+    elif straight_ahead == ("left"):
+      car = input("you have chosen the secound best option! you now have to answer a question! What is the colour of your car?\n")
+      if car == ("black"):
+        print("that is correct! the giant spider has gone")
+
+      answer = input("as you walk down the dark path you find a man standing at the end, hes staring at you angry. do you (a) shoot him or (b) talk to him?\n")
+      if answer == ("b"):
+        print("you have found that the man needs your help! ")
+        age = int(input(" he wants you to guess his age isit over 40 or not?\n"))
+        if age >= 40:
+          print(" that is correct i can trust you")###
+      else:
+        answer == ("a")
+        print("you find him lieing on the ground groaning, he sputters that he needed you to help him find his friend.  GAME OVER ")
+        #### carry on story
+      
+    else:
+      print("game over")
+  else:
+    print("game over")
+else:
+  print("game over!")
+
