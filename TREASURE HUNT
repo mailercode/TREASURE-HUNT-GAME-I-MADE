@@ -48,9 +48,6 @@ if turn == ("left"):
       if cross == ("yes"):
         print(" you have made it across safely and found the treasure")
 
-
-      
-
     elif straight_ahead == ("left"):
       car = input("you have chosen the secound best option! you now have to answer a question! What is the colour of your car?\n")
       if car == ("black"):
@@ -59,13 +56,35 @@ if turn == ("left"):
       answer = input("as you walk down the dark path you find a man standing at the end, hes staring at you angry. do you (a) shoot him or (b) talk to him?\n")
       if answer == ("b"):
         print("you have found that the man needs your help! ")
-        age = int(input(" he wants you to guess his age isit over 40 or not?\n"))
-        if age >= 40:
+        age = int(input(" he wants you to guess his age!? what is my age? \n"))
+
+        if (age >= 40) and (age <= 50):
           print(" that is correct i can trust you")###
+        else: 
+          (age >= 10) and (age <= 39)
+          print(" great always felt i was still in my youth! ")
+
+          find = input(" now i will find you the route to the treasure now, if you help me find my friend after?")
+
+          if find == ("yes"):
+            print(type(find))
+            print(" great follow me!")  
+
+            name = input("before we carry on i need to ask you a question about my name. my name is stephen mailer, how many characters are in my name\n")
+            if name == (13):
+              print("that is correct")
+            else:
+                ("game over")
+          else:
+            print("game over")
+
+
+
       else:
         answer == ("a")
         print("you find him lieing on the ground groaning, he sputters that he needed you to help him find his friend.  GAME OVER ")
         #### carry on story
+
       
     else:
       print("game over")
